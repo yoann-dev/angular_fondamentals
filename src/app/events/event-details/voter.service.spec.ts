@@ -3,8 +3,8 @@ import { ISession } from "../index";
 import { of } from "rxjs";
 
 describe('VoterService', () => {
-  let voterService: VoterService;
-  let mockHttp;
+  let voterService: VoterService,
+    mockHttp;
 
   beforeEach(() => {
     mockHttp = jasmine.createSpyObj('mockHttp', ['delete', 'post'])
